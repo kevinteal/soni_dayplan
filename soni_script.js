@@ -19,7 +19,7 @@ function add_to_plan2(e,method){
 	{
 		//remove box from screen and reload fav bands
 		//load_band_fav();
-		$("#fav"+band_id).animate({height:0},1300,function(){
+		$("#fav"+band_id).animate({height:0},1000,function(){
 						load_band_fav();
 					}
 				);
@@ -92,7 +92,7 @@ function set_up_main_page(){
 						
 			 });
 		}else{
-			$("#not_time").text("Once The Festival Starts Bands Will Appear Here"); 
+			$("#not_time").html("Once The Festival Starts Bands Will Appear Here <br/><br/>"); 
 			}
 			set_up_lineup(1,"system");
 }
@@ -230,32 +230,32 @@ function set_up_lineup(stageNum,method){
 			 }
 }
 
-function bg_chang(day){
+function bg_chang(day,sel){
 	//3D505B -selected
 	//D1CCD2 - unactive
 	if(day==1){
-	$("#day_fri").css("background-color","#3D505B");
-	$("#day_fri").css("color","#FFF");
-	$("#day_sat").css("background-color","#D1CCD2");
-	$("#day_sat").css("color","#000");
-	$("#day_sun").css("background-color","#D1CCD2");
-	$("#day_sun").css("color","#000");
+	$("#"+sel+"_fri").css("background-color","#3D505B");
+	$("#"+sel+"_fri").css("color","#FFF");
+	$("#"+sel+"_sat").css("background-color","#D1CCD2");
+	$("#"+sel+"_sat").css("color","#000");
+	$("#"+sel+"_sun").css("background-color","#D1CCD2");
+	$("#"+sel+"_sun").css("color","#000");
 	}
 	if(day==2){
-	$("#day_fri").css("background-color","#D1CCD2");
-	$("#day_fri").css("color","#000");
-	$("#day_sat").css("background-color","#3D505B");
-	$("#day_sat").css("color","#FFF");
-	$("#day_sun").css("background-color","#D1CCD2");
-	$("#day_sun").css("color","#000");
+	$("#"+sel+"_fri").css("background-color","#D1CCD2");
+	$("#"+sel+"_fri").css("color","#000");
+	$("#"+sel+"_sat").css("background-color","#3D505B");
+	$("#"+sel+"_sat").css("color","#FFF");
+	$("#"+sel+"_sun").css("background-color","#D1CCD2");
+	$("#"+sel+"_sun").css("color","#000");
 	}
 	if(day==3){
-	$("#day_fri").css("background-color","#D1CCD2");
-	$("#day_fri").css("color","#000");
-	$("#day_sat").css("background-color","#D1CCD2");
-	$("#day_sat").css("color","#000");
-	$("#day_sun").css("background-color","#3D505B");
-	$("#day_sun").css("color","#FFF");
+	$("#"+sel+"_fri").css("background-color","#D1CCD2");
+	$("#"+sel+"_fri").css("color","#000");
+	$("#"+sel+"_sat").css("background-color","#D1CCD2");
+	$("#"+sel+"_sat").css("color","#000");
+	$("#"+sel+"_sun").css("background-color","#3D505B");
+	$("#"+sel+"_sun").css("color","#FFF");
 	}
 
 }
@@ -369,41 +369,4 @@ function load_band_fav(){
 			 });
 	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

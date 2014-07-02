@@ -26,7 +26,7 @@
 </a>
 		</div>
 		<div data-role="content" data-theme="a">
-           <span id="not_time"></span><br/><br/>
+           <span id="not_time"></span>
             Apollo
             <div class="now_playing_box">
             
@@ -112,9 +112,9 @@
     <div data-role="tabs" id="tabs">
       <div data-role="navbar">
         <ul>
-          <li><a href="#tab_one" class="ui-btn-active" data-ajax="false">Friday</a></li>
-          <li><a href="#tab_two" data-ajax="false">Saturday</a></li>
-          <li><a href="#tab_three" data-ajax="false">Sunday</a></li>
+          <li><a id="lu_fri" href="#tab_one" onClick="bg_chang(1,'lu')" class="ui-btn-active" data-ajax="false">Friday</a></li>
+          <li><a id="lu_sat" href="#tab_two" onClick="bg_chang(2,'lu')" data-ajax="false">Saturday</a></li>
+          <li><a id="lu_sun" href="#tab_three" onClick="bg_chang(3,'lu')" data-ajax="false">Sunday</a></li>
         </ul>
       </div>
       <div id="tab_one" class="ui-body-d ui-content">
@@ -171,9 +171,9 @@
     <div data-role="tabs" id="tabs_day">
       <div data-role="navbar">
         <ul>
-          <li><a id="day_fri" href="#tab_one_day" onClick="bg_chang(1)" class="ui-btn-active" data-ajax="false">Friday</a></li>
-          <li><a id="day_sat" href="#tab_two_day" onClick="bg_chang(2)" data-ajax="false">Saturday</a></li>
-          <li><a id="day_sun" href="#tab_three_day" onClick="bg_chang(3)" data-ajax="false">Sunday</a></li>
+          <li><a id="day_fri" href="#tab_one_day" onClick="bg_chang(1,'day')" class="ui-btn-active" data-ajax="false">Friday</a></li>
+          <li><a id="day_sat" href="#tab_two_day" onClick="bg_chang(2,'day')" data-ajax="false">Saturday</a></li>
+          <li><a id="day_sun" href="#tab_three_day" onClick="bg_chang(3,'day')" data-ajax="false">Sunday</a></li>
         </ul>
       </div>
       <div id="tab_one_day" class="ui-body-d ui-content">
