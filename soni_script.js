@@ -19,7 +19,7 @@ function add_to_plan2(e,method){
 	{
 		//remove box from screen and reload fav bands
 		//load_band_fav();
-		$("#fav"+band_id).animate({height:0},300,function(){
+		$("#fav"+band_id).animate({height:0},1300,function(){
 						load_band_fav();
 					}
 				);
@@ -53,7 +53,7 @@ function set_up_main_page(){
 	var fulldate=getFulldate();
 	var time = getFulltime();
 	
-	fulldate=20140705;
+	//fulldate=20140705;
 	//time=1359;
 	if (fulldate == 20140704 || fulldate == 20140705 || fulldate == 20140706 )
 		{
