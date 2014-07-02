@@ -294,10 +294,13 @@ function load_band_fav(){
 								var start_time = BandRecord.start_time.toString();
 								start_time=start_time.substring(0,2)+":"+start_time.substring(2,4);
 								
-								
-									
+								var band_stage_show = BandRecord.stage;
+									if(BandRecord.stage=="Jagermeister")
+									{
+										band_stage_show = "Jager";
+									}
 								var content = '<div id=fav'+BandRecord.id+' class="lineup_band" ><strong>'+BandRecord.band_name+'</strong>'+
-														'<br/><span class="darker_text">'+BandRecord.stage+' at '+start_time+' - '+finish_time+'</span><br/>'+
+														'<br/><span class="darker_text">'+band_stage_show+' at '+start_time+' - '+finish_time+'</span><br/>'+
 													'<form><select name=flip'+BandRecord.id+' id=flip'+BandRecord.id+' data-role="flipswitch" data-mini="true" data-theme="c" onChange="add_to_plan2(this,1)">'+
 													'<option value="off" >Off</option> <option value="on" selected >On</option></select></form> </div>';
 									

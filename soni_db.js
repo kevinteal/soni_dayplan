@@ -78,7 +78,7 @@ function set_up_soni_db(){
 		
 		//sat bohemia
 		tx.executeSql('INSERT INTO bands (id, band_name, stage, day, start_time, finish_time, band_fav) VALUES (50, "Hang The Bastard", "Bohemia", 20140705, 1115, 1145, 0)');
-		tx.executeSql('INSERT INTO bands (id, band_name, stage, day, start_time, finish_time, band_fav) VALUES (51, "Calling Are Cars", "Bohemia", 20140705, 1205, 1235, 0)');
+		tx.executeSql('INSERT INTO bands (id, band_name, stage, day, start_time, finish_time, band_fav) VALUES (51, "Calling All Cars", "Bohemia", 20140705, 1205, 1235, 0)');
 		tx.executeSql('INSERT INTO bands (id, band_name, stage, day, start_time, finish_time, band_fav) VALUES (52, "Voodoo Six", "Bohemia", 20140705, 1255, 1325, 0)');
 		tx.executeSql('INSERT INTO bands (id, band_name, stage, day, start_time, finish_time, band_fav) VALUES (53, "Blitz Kids", "Bohemia", 20140705, 1345, 1415, 0)');
 		tx.executeSql('INSERT INTO bands (id, band_name, stage, day, start_time, finish_time, band_fav) VALUES (54, "Reckless Love", "Bohemia", 20140705, 1425, 1455, 0)');
